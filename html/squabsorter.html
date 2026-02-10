@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/squabsorter.css">
+    <title>PiDGN Quest</title>
+    <link rel="stylesheet" href="https://use.typekit.net/apz3hja.css">
+
+    <style>
+        body, html {
+        overflow: hidden; 
+        height: 100%;     
+        margin: 0;       
+        }
+    </style>
+    
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#squab1" ).draggable();
+    $( "#squab2" ).draggable();
+    $( "#squab3" ).draggable();
+    $( "#squab4" ).draggable();
+    $( "#squab5" ).draggable();
+  } );
+  
+  </script>
+    
+</head>
+
+    <div class="border" id="countdown"></div>
+
+<div class="resize-squab">
+    <img src="../images/babypigeon3.gif" draggable="true" id="squab1"/>
+    <img src="../images/babypigeon3.gif" draggable="true" id="squab2"/>
+    <img src="../images/babypigeon3.gif" draggable="true" id="squab3"/>
+    <img src="../images/babypigeon3.gif" draggable="true" id="squab4"/>
+    <img src="../images/babypigeon3.gif" draggable="true" id="squab5"/>
+    <img src="../images/babypigeon3.gif" id="squab6"/>
+</div>
+
+<div class="nests">
+
+<div class="nest1"> <img src="../images/fillednest.png"> </div>
+
+<div class="nest2"> <img src="../images/fillednest.png"> </div>
+
+<div class="nest3"> <img src="../images/fillednest.png"> </div>
+
+<div class="nest4"> <img src="../images/fillednest.png"> </div>         
+
+<div class="nest5"> <img src="../images/fillednest.png"> </div>
+
+<div class="nest6"> <img src="../images/fillednest.png"> </div>
+
+</div>
+
+<div class="endscreen">
+    <h1 class="failed">LEVEL FAILED</h1>
+    <p class="return"><a id="doc-link" href="../html/stage4.html"> 
+        <button> Check on Paul? </button>
+    </a></p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="../js.js"></script>
+
+</html>

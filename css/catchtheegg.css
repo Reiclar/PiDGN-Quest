@@ -1,0 +1,138 @@
+ * {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('../images/eggfall.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#draggable{
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+
+
+}
+
+.endscreen{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+    margin: 0 auto; 
+    animation-name: fadein;
+    animation-delay: 0s;
+    animation-duration: 0s;
+   -webkit-animation: 43s ease 0s normal forwards 1 fadein;
+    animation: 43s ease 0s normal forwards 1 fadein;
+
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+.failed{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200px;
+    text-align: center;
+    position:relative;
+    top: 15%;
+    color: #000000;
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+
+}
+
+.collected{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    position:relative;
+    top: 15%;
+    color: #000000;
+}
+
+button{
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 45px;
+    position:fixed;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 4.5%;
+    left: 3.5%;
+    animation: blink 1.5s steps(1, start) infinite; 
+}
+
+@keyframes blink {
+    100% { opacity: 1; }
+    50% { opacity: 0; }
+    0% {opacity: 1}
+}
+
+button:hover{
+    color: rgb(132, 132, 132);
+    align-self: center;
+}
+
+.eggstatus{
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 3%;
+    left: 85%;
+    background-color: transparent;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    display: flex;  
+    gap: 10px;                 
+    overflow: hidden;
+}
+
+.zero{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #000000;
+    position: inherit;
+    left: 91%;
+}
+
+.eggicon{
+    width: 250px;
+    height: auto;
+    position: inherit;
+    left: 80%;
+}
+

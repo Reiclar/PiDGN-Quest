@@ -1,0 +1,313 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.resize-bigbird{
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: -10px;
+    top: -10px;
+}
+
+.resize-bigbird {
+    animation: blink 1.5s steps(1, start) infinite; 
+    animation-delay: 0.5s; 
+}
+
+  @keyframes blink {
+    100% { opacity: 1; }
+    50% { opacity: 0; }
+    0% {opacity: 1}
+}
+
+.resize-bigbird2{
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: -10px;
+    top: -410px;
+}
+
+.resize-bigbird2 {
+    animation: blink 1.5s steps(1, start) infinite; 
+    animation-delay: -0.25s; 
+}
+
+.typewriter-container1{
+    width: 18%;
+    height: 100px;
+    margin: 0 auto; 
+    overflow: hidden; 
+    top: 10px;
+}
+
+.typewriter-text1{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    position:relative;
+    top: 50px;
+    color: #1E1E1E;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: .15em #1E1E1E;
+
+    animation: 
+    typing 1s steps(13, end) forwards, 
+    blink-caret .75s step-end infinite; 
+
+}
+
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% } 
+}
+
+.cover1{
+    width: 63%;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    top: -420px;
+    margin: 0 auto; 
+    animation-name: fadeOut;
+    animation-delay: 1.5s;
+    animation-duration: 0s;
+    animation-timing-function: ease-in; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.typewriter-container2{
+    width: 62%;
+    height: 50px;
+    margin: 0 auto; 
+    overflow: hidden; 
+    top: -370px;
+    position: relative;
+}
+
+.typewriter-text2{
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    position:relative;
+    color: #1E1E1E;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: .15em #1E1E1E;
+
+    animation: 
+    typing 4s steps(80, end) forwards, 
+    blink-caret .75s step-end infinite; 
+    animation-delay: 1.5s; 
+}
+
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% } 
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  100% { border-color: #1E1E1E} 
+}
+
+.cover2{
+    width: 63%;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    top: -480px;
+    margin: 0 auto; 
+   -webkit-animation: 9s ease 0s normal forwards 1 fadein;
+    animation: 9s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+.typewriter-container3{
+    width: 64%;
+    height: 50px;
+    margin: 0 auto; 
+    overflow: hidden; 
+    top: -519px;
+    position: relative;
+}
+
+.typewriter-text3{
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    position:relative;
+    color: #1E1E1E;
+    white-space: nowrap; 
+    overflow: hidden; 
+    
+    width: 0;
+    border-right: .15em #1E1E1E;
+
+    animation: 
+    typing 4s steps(80, end) forwards, 
+    blink-caret .75s step-end infinite; 
+    animation-delay: 6s; 
+}
+
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% } 
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  100% { border-color: #1E1E1E} 
+}
+
+
+.cover3{
+    width: 65%;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    top: -560px;
+    margin: 0 auto; 
+   -webkit-animation: 17s ease 0s normal forwards 1 fadein;
+    animation: 17s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+
+.cover4{
+    width: 65%;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    top: -1100px;
+    margin: 0 auto; 
+   -webkit-animation: 17s ease 0s normal forwards 1 fadein;
+    animation: 17s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+  button{
+    border: 1px rgb(255, 255, 255) solid;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 80px;
+    border: 4px solid rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    z-index: 4;
+    align-self:  center center;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-animation: 18s ease 0s normal forwards 1 fadein;
+    animation: 18s ease 0s normal forwards 1 fadein;
+    
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+button:hover{
+    background-color: rgb(132, 132, 132);
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+
+.no{
+    position: relative;
+    top: -700px;
+    left: 35%;
+}
+
+.yes{
+    position: relative;
+    top: -850px;
+    left: 55%;
+}

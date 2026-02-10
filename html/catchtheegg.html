@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/catchtheegg.css">
+    <title>PiDGN Quest</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.typekit.net/apz3hja.css">
+
+    <style>
+        body, html {
+        overflow: hidden; 
+        height: 100%;     
+        margin: 0;       
+        }
+    </style>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+
+    
+</head>
+
+<div class="endscreen">
+    <h1 class="failed">LEVEL FAILED</h1>
+    <p class="collected"> 0 eggs collected.</p>
+    <p class="return"><a id="doc-link" href="../html/stage3.html"> 
+        <button> Check on Paul? </button>
+    </a></p>
+</div>
+
+<div id="draggable" class="ui-widget-content"> 
+    <img src="../images/fillednest.png">
+</div>
+
+<div class="eggstatus">
+    <p class="zero">x0</p>
+    <img src="../images/egg.png" class="eggicon">
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+
+</html>

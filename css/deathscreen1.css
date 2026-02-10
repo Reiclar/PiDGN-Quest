@@ -1,0 +1,161 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.left{
+    width: 500px;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    left: 490px;
+    top: -120px;
+}
+
+.right{
+    width: 500px;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    left: 490px;
+    top: -604px;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  
+  .left {
+    animation: blink 1.5s steps(1, start) infinite; 
+    animation-delay: 0.5s; 
+  }
+
+  @keyframes blink {
+    100% { opacity: 1; }
+    50% { opacity: 0; }
+    0% {opacity: 1}
+  }
+  
+  .right {
+    animation: blink 1.5s steps(1, start) infinite; 
+    animation-delay: -0.25s; 
+  }
+
+.resize-bigbird{
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 20px;
+    top: -855px;
+    rotate: 9deg;
+}
+
+.typewriter-container1{
+    width: 3%;
+    height: 100px;
+    margin: 0 auto; 
+    overflow: hidden; 
+    top: 10px;
+}
+
+.typewriter-text1{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    position:relative;
+    top: 50px;
+    color: #1E1E1E;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: .15em #1E1E1E;
+
+    animation: 
+    typing 1s steps(3, end) forwards, 
+    blink-caret .75s step-end infinite; 
+
+}
+
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% } 
+}
+
+
+
+.gameoverscreen{
+    width: 100%;
+    height: 1000px;
+    top: -1500px;
+    background-color: #000000;
+    position: relative;
+    margin: 0 auto; 
+   -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.gameover{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200px;
+    text-align: center;
+    position:relative;
+    top: -2350px;
+    color: #ffffff;
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+
+}
+
+  button{
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 40px;
+    position:relative;
+    top: -2350px;
+    z-index: 4;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+    
+}
+
+button:hover{
+    color: rgb(132, 132, 132);
+    align-self: center;
+}
+
+.restart{
+        text-align: center;
+}

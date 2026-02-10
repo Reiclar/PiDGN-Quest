@@ -1,0 +1,170 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #ffffff;
+}
+
+
+
+.resize-letters{
+    color: #000000;
+     font-weight: bold;
+    font-size: 160px;
+    position:fixed;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 15%;
+}
+
+
+#pi{
+
+}
+
+#fea{
+
+}
+
+#epi{
+
+}
+
+
+.static-container{
+    color: #000000;
+     font-weight: bold;
+    font-size: 160px;
+    position:fixed;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 15%;
+    left: 74%;
+    align: left
+}
+
+
+
+
+.endscreen{
+    position: fixed; 
+    top: 0;         
+    left: 0;         
+    width: 100vw;    
+    height: 100vh;   
+    background-color: #ffffff;
+    z-index: 10000;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; 
+    animation: fadein 14s ease forwards, enable-clicks 14s step-end forwards;
+}
+
+
+@keyframes enable-clicks {
+    0% { pointer-events: none; }
+    67% { pointer-events: auto; } 
+    100% { pointer-events: auto; }
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    67% { opacity: 1; }
+    100% { opacity:1; }
+}
+
+.failed{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200px;
+    text-align: center;
+    position:relative;
+    color: #000000;
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+
+}
+
+button{
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 45px;
+    position:fixed;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 4.5%;
+    left: 3.5%;
+    animation: blink 1.5s steps(1, start) infinite; 
+}
+
+button:hover{
+    color: rgb(132, 132, 132);
+    align-self: center;
+}
+
+.nests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0px;
+    margin-top: 5%; 
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+
+    transform: translate(-50%, -50%); 
+    width: 1050px; 
+    
+}
+
+
+#countdown{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 45px;
+    position:fixed;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: translate(-50%, -50%);
+    left: 95%;
+    top: 9%;
+}
+
+.border{
+    background-color: #1E1E1E;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px 20px 6px 20px;
+    border-radius: 90px;
+    position: relative;
+    top: 40px;
+    margin: auto; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    z-index: 9999;
+}

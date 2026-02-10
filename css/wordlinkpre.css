@@ -1,0 +1,58 @@
+ * {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #000000;
+}
+
+
+.instructions{
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    position:relative;
+    top: 30%;
+    color: #ffffff;
+}
+
+.buttoncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40%;
+}
+
+button{
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 50px;
+    position:inherit;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: blink 1.5s steps(1, start) infinite; 
+}
+
+  @keyframes blink {
+    100% { opacity: 1; }
+    50% { opacity: 0; }
+    0% {opacity: 1}
+}
+
+button:hover{
+    color: rgb(132, 132, 132);
+    align-self: center;
+}
+
+.start{
+        text-align: center;
+}
